@@ -1,4 +1,4 @@
-# Media-Player-with-Hand-Gesture
+# Hand Gesture Recognition System (JARVIS)
 
 ## Overview
 This project implements a real-time hand gesture recognition system using deep learning techniques. The system allows users to control media playback and other actions through intuitive hand gestures captured by a webcam.
@@ -8,20 +8,25 @@ The Hand Gesture Recognition System utilizes a Convolutional Neural Network (CNN
 
 ## Features
 - Real-time hand gesture recognition from webcam feed.
-- Supports gestures like palm, fist, thumbs-up, thumbs-down, and directional gestures.
+- Supports gestures like palm, fist, thumbs-up, thumbs-down, and directional gestures (index pointing left/right).
 - Integration with `pyautogui` for controlling media playback (play/pause, volume control) and seeking.
 - Easily extendable to include additional gestures or actions.
 
 ## Steps for Approach
 1. **Data Collection and Preprocessing:** Gathered and preprocessed a dataset of hand gesture images, including augmentation to enhance model robustness.
    
-2. **Model Training:** Developed and trained a CNN using PyTorch to classify hand gestures. Implemented techniques like data augmentation, batch normalization, and dropout for improved accuracy.
+2. **Model Architecture:** Designed a CNN architecture consisting of 4 convolutional layers followed by fully connected layers for gesture classification. Used ReLU activations, dropout for regularization, and batch normalization to improve training stability.
+
+3. **Training Details:**
+   - **Loss Function:** Cross-entropy loss function used for multi-class classification.
+   - **Optimizer:** Adam optimizer with an initial learning rate of 0.001, adjusted dynamically using learning rate scheduling (`StepLR`) to optimize convergence.
+   - **Early Stopping:** Implemented early stopping based on validation accuracy to prevent overfitting and improve generalization.
+
+4. **Model Evaluation:** Evaluated the model using a separate validation dataset to ensure generalization and optimized hyperparameters using techniques like learning rate scheduling.
    
-3. **Model Evaluation:** Evaluated the model using a separate validation dataset to ensure generalization and optimized hyperparameters using techniques like learning rate scheduling.
+5. **Real-time Inference:** Developed a script to capture live video frames, preprocess them for model input, and perform real-time inference using the trained CNN model.
    
-4. **Real-time Inference:** Developed a script to capture live video frames, preprocess them for model input, and perform real-time inference using the trained CNN model.
-   
-5. **Integration with `pyautogui`:** Mapped predicted gestures to corresponding actions (e.g., media control commands) using the `pyautogui` library for seamless interaction.
+6. **Integration with `pyautogui`:** Mapped predicted gestures to corresponding actions (e.g., media control commands) using the `pyautogui` library for seamless interaction.
 
 ## KPIs (Key Performance Indicators)
 - **Accuracy:** Achieved an accuracy of 98% on the validation dataset for gesture classification.
@@ -36,4 +41,3 @@ The implementation involves:
 
 ## Conclusion
 The Hand Gesture Recognition System enhances user interaction with digital devices by providing a hands-free, intuitive control mechanism. Future enhancements could include expanding gesture vocabulary, improving model robustness, and integrating with broader applications beyond media control.
-
