@@ -1,13 +1,10 @@
 # Media-Player-with-Hand-Gesture
 
-
-# Hand Gesture Recognition System (JARVIS)
-
 ## Overview
 This project implements a real-time hand gesture recognition system using deep learning techniques. The system allows users to control media playback and other actions through intuitive hand gestures captured by a webcam.
 
 ## Description
-The Hand Gesture Recognition System (JARVIS) utilizes a Convolutional Neural Network (CNN) to classify hand gestures from live video streams. It preprocesses video frames, extracts regions of interest (ROI), and predicts gestures based on a trained model. Actions corresponding to recognized gestures are performed using `pyautogui`, enabling seamless interaction with media playback and other applications.
+The Hand Gesture Recognition System utilizes a Convolutional Neural Network (CNN) to classify hand gestures from live video streams. It preprocesses video frames, extracts regions of interest (ROI), and predicts gestures based on a trained model. Actions corresponding to recognized gestures are performed using `pyautogui`, enabling seamless interaction with media playback and other applications.
 
 ## Features
 - Real-time hand gesture recognition from webcam feed.
