@@ -1,4 +1,5 @@
-# Hand Gesture Recognition System (JARVIS)
+# Media Player using Hand Gesture
+
 
 ## Overview
 This project implements a real-time hand gesture recognition system using deep learning techniques. The system allows users to control media playback and other actions through intuitive hand gestures captured by a webcam.
@@ -38,6 +39,28 @@ The implementation involves:
 - Training and saving the CNN model for gesture recognition.
 - Developing a Python script to capture webcam frames, preprocess them, and perform gesture classification using the trained model.
 - Integrating `pyautogui` to execute actions based on recognized gestures.
+
+## Photos: 
+**Code Snapshot:**
+![Code Snapshot](https://github.com/jainam0037/Media-Player-with-Hand-Gesture/blob/main/code%20.png)
+
+**Move Backwards:**
+![Move Backwards](https://github.com/jainam0037/Media-Player-with-Hand-Gesture/blob/main/move%20backwards.png)
+
+
+**Move Forward:**
+![Move Forward](https://github.com/jainam0037/Media-Player-with-Hand-Gesture/blob/main/move%20forward.png)
+
+
+**Volume Down:**
+![Volume Down](https://github.com/jainam0037/Media-Player-with-Hand-Gesture/blob/main/volume%20down.png)
+
+
+**Volume Up:**
+![Volume Up](https://github.com/jainam0037/Media-Player-with-Hand-Gesture/blob/main/volume%20up.png)
+
+
+
 
 ## Conclusion
 The Hand Gesture Recognition System enhances user interaction with digital devices by providing a hands-free, intuitive control mechanism. Future enhancements could include expanding gesture vocabulary, improving model robustness, and integrating with broader applications beyond media control.
